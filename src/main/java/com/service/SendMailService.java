@@ -14,12 +14,11 @@ public class SendMailService {
 
     private static String host="pop.qq.com";//邮箱服务器
     private static String sendUser="2624384558@qq.com";//发件人邮箱
-    private static String sendPassWord="qncamvkxktofdiaj";//发件人授权码
+    private static String sendPassWord="xxxxxxxx";//发件人授权码
 
     /**
      * @Title sendEmail
      * @description 发送邮件
-     * @date 2022年10月10日 下午18:10
      * @param toUser 被发送的qq邮箱地址
      *
      */
@@ -40,7 +39,7 @@ public class SendMailService {
              * SMTP 服务器的端口 (非 SSL 连接的端口一般默认为 25, 可以不添加, 如果开启了 SSL 连接,
              * 需要改为对应邮箱的 SMTP 服务器的端口, 具体可查看对应邮箱服务的帮助,
              * QQ邮箱的SMTP(SLL)端口为465或587, 其他邮箱自行去查看)
-             *
+             * qncamvkxktofdiaj
             String smtpPort = "465";
             props.setProperty("mail.smtp.port", smtpPort);//端口号
             props.setProperty("mail.smtp.ssl.enable", "true");//加认证机制*/
@@ -95,4 +94,15 @@ public class SendMailService {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
