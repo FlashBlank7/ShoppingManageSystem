@@ -14,6 +14,7 @@ public interface MD5Utils {
             while (hashtext.length() < 32) {
                 hashtext = "0" + hashtext;
             }
+
             return hashtext;
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
